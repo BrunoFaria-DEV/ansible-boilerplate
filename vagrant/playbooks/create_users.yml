@@ -1,0 +1,11 @@
+- name: Playbook para criação de usuários
+  hosts: all
+  vars:
+    server_name: server01
+    user_name: analistadevops
+    conf_file: /opt/app/app.conf
+  tasks:
+    - name: Criando o usuario
+      become: true
+      user:
+        name: "{{ user_name }}"

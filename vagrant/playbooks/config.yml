@@ -1,0 +1,3 @@
+server_name: server02
+user_name: analistadevops2
+conf_file: /opt/app/app.conf
