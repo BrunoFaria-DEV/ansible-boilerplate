@@ -1,0 +1,9 @@
+- name: Playbook para criação de usuários
+  hosts: all
+  vars_files:
+    config.yml
+  tasks:
+    - name: Criando o usuario
+      become: true
+      user:
+        name: "{{ user_name }}"
